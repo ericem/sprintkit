@@ -199,8 +199,8 @@ class SandboxResource(Resource):
 
             
         """
-        tnow = datetime.now().replace(microsecond=0) #remove microseconds
-        tzone = time.strftime("%Z", time.localtime()) #get current time zone
+        tnow = datetime.utcnow().replace(microsecond=0) #remove microseconds
+        tzone = "UTC"
         timestamp = datetime.isoformat(tnow) + tzone
         return timestamp
 
