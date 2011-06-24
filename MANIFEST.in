@@ -1,0 +1,13 @@
+include AUTHORS CHANGES LICENSE Makefile README.rst
+recursive-include docs *
+recursive-include examples *
+recursive-include tests *
+global-exclude *.pyc
+global-exclude *.swp
+global-exclude *.DS_Store
+global-exclude *sprintkit.conf
+global-exclude *params.py
+prune docs/_build
+include examples/sample_sprintkit.conf
+include tests/functional/sample_sprintkit.conf
+include tests/functional/sample_params.py
