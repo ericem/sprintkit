@@ -10,7 +10,7 @@ version = '0.1.0'
 setup(
     name='sprintkit',
     version=version,
-    description="A library to access Sprint's Network Sandbox",
+    description="Access Sprint's Network APIs Through Python",
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -25,7 +25,7 @@ setup(
     keywords='communications',
     author='Eric Miller',
     author_email='eric.miller@sprint.com',
-    url='',
+    url='https://github.com/ericem/sprintkit',
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},

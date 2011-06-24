@@ -6,7 +6,7 @@ test:
 	python setup.py nosetests
 
 release:
-	python setup.py release sdist
+	python setup.py release sdist upload
 
 build:
 	python setup.py build sdist
