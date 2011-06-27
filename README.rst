@@ -1,5 +1,5 @@
-SprintKit, Sprint's Network APIs in Python
-==========================================
+Sprint's Network APIs in Python
+===============================
 
 SprintKit (based upon the excellent `restkit` HTTP client) allows developers to
 add mobile functionality to their Python apps by providing easy access to the
@@ -7,7 +7,7 @@ Sprint Developer Sandbox. The Sprint Developer Sandbox is a REST based gateway
 to Sprint's network services including; Location, SMS, MMS, Presence, and
 Geo-Fences.
 
-Basic access to the Developer Sandbox is Fr$$, so get signed-up and let's see
+Basic access to the Developer Sandbox is FR$$, so get signed-up and let's see
 what you can build!
 
 Python Dependencies
@@ -30,8 +30,18 @@ Installation
 ============
 
 SprintKit can be found on the Python Package Index (PyPI) and installed over
-the Internet using either `pip` or Setuptools `easy_install`. I prefer Pip
-because it handles dependencies and provides an unistall mechanism.
+the Internet using either `pip` or Setuptool's `easy_install`. I prefer Pip
+because it handles dependencies and provides an unistall mechanism. 
+
+The installation process has only been tested on Linux and Mac OSX. Since
+http-parser is a C exstension module you need a gcc compiler and the Python
+headers to build and install it. This isn't as scary as it seems and works out
+of the box on Mac, but you might have to install a few more things on your
+Linux machine. For instance if you are using a Debian based distro you will
+need the python-dev package as well as build-essential. 
+
+You might be able to get this all working under Windows (cygwin would probably
+be the easiest), but I haven't tried it.
 
 Pip (the easy way)
 ----------------------
@@ -42,6 +52,8 @@ but first you need make sure you have a recent version of
     $ curl -O http://python-distribute.org/distribute_setup.py
     $ sudo python distribute_setup.py
     $ easy_install pip
+
+Note: if you don't have curl installed you can use wget instead.
 
 Once you have pip, the rest is easy. It will install all of SprintKit's run-time
 dependencies for you::
@@ -144,5 +156,11 @@ use it from the Python shell::
     >>> from sprintkit import Perimeter
     >>> perimeter = Perimeter()
     >>> help(perimeter)
+
+If you want to have a nicely formatted copy of the documentation you can
+generate a pdf from the source::
+
+    make docs
+    open docs/_build/latex/sprintkit.pdf
 
 .. [#] Only required for restkit versions 3.3 and higher.
