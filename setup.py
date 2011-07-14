@@ -5,7 +5,7 @@ here = path.abspath(path.dirname(__file__))
 README = open(path.join(here, 'README.rst')).read()
 CHANGES = open(path.join(here, 'CHANGES')).read()
 
-version = '0.1.0'
+version = '0.2.0'
 
 setup(
     name='sprintkit',

@@ -150,6 +150,8 @@ that::
 Help and Documentation
 ======================
 
+You can read the `latest documentation <http://sprintkit.readthedocs.org/>`_ online at Read The Docs. There you will also find a `PDF version <http://media.readthedocs.org/pdf/sprintkit/latest/sprintkit.pdf>`_ for those that want a nicely formatted paper copy. 
+
 SprintKit contains extensive Doc Strings, so the quickest way to learn it is to
 use it from the Python shell::
 
@@ -157,8 +159,8 @@ use it from the Python shell::
     >>> perimeter = Perimeter()
     >>> help(perimeter)
 
-If you want to have a nicely formatted copy of the documentation you can
-generate a pdf from the source::
+You can also generate a PDF from the source files using the following
+commands::
 
     make docs
     open docs/_build/latex/sprintkit.pdf
